@@ -22,7 +22,10 @@
 
       window.addEventListener('scroll', function() {
         const button = document.querySelector('.moveToTop');
-        if (window.scrollY >= 200) {
+        // if(window.scrollY >= 200) {　の条件式の部分を、ページ全体の高さに変更する
+        // document.body.clientHeightでページ全体の高さを取得することができる
+        if (window.scrollY >= document.body.clientHeight / 2) {
+        // 以降は同じ
           button.style.display = 'block';
         } else {
           button.style.display = 'none';
