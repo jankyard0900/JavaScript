@@ -8,5 +8,12 @@
     <button>
       <div class="countup" type="button">+1</div>
     </button>
+    <script>
+      const countupButton = document.querySelector('.countup');
+      countupButton.addEventListener('click', function() {
+        const counter = document.querySelector('.counter');
+        counter.textContent = parseInt(counter.textContent) + 1;
+      });
+    </script>
   </body>
 </html>
