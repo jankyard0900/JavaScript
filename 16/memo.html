@@ -19,6 +19,8 @@
 
         const memoList = document.querySelector('.memo-list');
         memoList.append(newMemo);
+        // メモを追加した後に、入力欄をリセットする。
+        newMemoInput.value = '';
       });
     </script>
   </body>
